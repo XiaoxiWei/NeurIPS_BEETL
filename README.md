@@ -1,9 +1,9 @@
 # NeurIPS 2021 BEETL Competition - Benchmarks for EEG Transfer Learning
-This is the NeurIPS BEETL repository (https://beetl.ai)
+This is the NeurIPS BEETL repository
 
 ## Competition information
 
-All details about the competition are available on the official website: https://beetl.ai/
+Details about the competition are available on the official website: https://beetl.ai/
 
 We offer two specific challenges to promote the development of EEG decoding to use big data:
 
