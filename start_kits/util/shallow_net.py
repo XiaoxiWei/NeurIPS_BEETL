@@ -101,7 +101,7 @@ class EEGShallowClassifier(nn.Module):
         n_out = x0.cpu().data.numpy().shape
         filtersize=n_out[1]
         n_out_time = n_out[2]
-        print('feature shape is: ', n_out)
+#         print('feature shape is: ', n_out)
         
         if if_reduction:
             self.feature_reduction = nn.Conv2d(filtersize, reductionsize,
@@ -127,7 +127,7 @@ class EEGShallowClassifier(nn.Module):
             else:
                 x0=self.feature_reduction(x0)
             n_out = x0.cpu().data.numpy().shape
-            print('feature reduction shape is: ', n_out)
+#             print('feature reduction shape is: ', n_out)
             self.classifier = EEGClassifier(n_out_time=1,
                                         n_classes=n_classes,filtersize=reductionsize+cat_features)
         else:
